@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @cadastro_moradore.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @cadastro_moradore.endereco %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @cadastro_moradore.email %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @cadastro_moradore.telefone %>
+</p>
+
+<%= link_to 'Edit', edit_cadastro_moradore_path(@cadastro_moradore) %> |
+<%= link_to 'Back', cadastro_moradores_path %>

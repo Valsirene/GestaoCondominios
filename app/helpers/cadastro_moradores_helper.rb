@@ -1,0 +1,2 @@
+module CadastroMoradoresHelper
+end

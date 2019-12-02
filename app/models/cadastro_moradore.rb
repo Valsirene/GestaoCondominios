@@ -1,0 +1,2 @@
+class CadastroMoradore < ApplicationRecord
+end
