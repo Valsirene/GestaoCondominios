@@ -1,8 +1,8 @@
+<div class="form-group row">
 <%= form_with(model: cadastro_moradore, local: true) do |form| %>
   <% if cadastro_moradore.errors.any? %>
-    <div id="error_explanation">
+    <div class:'card-body'>
       <h2><%= pluralize(cadastro_moradore.errors.count, "error") %> prohibited this cadastro_moradore from being saved:</h2>
-
       <ul>
         <% cadastro_moradore.errors.full_messages.each do |message| %>
           <li><%= message %></li>
@@ -10,28 +10,24 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
   </div>
-
-  <div class="field">
-    <%= form.label :endereco %>
-    <%= form.text_area :endereco %>
+  <div class="form-group">
+    <label for="inputAddress">Nome</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="José">
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="form-group">
+    <label for="inputAddress2">Endereço</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Rua Assis, 20, Poços de Caldas">
   </div>
-
-  <div class="field">
-    <%= form.label :telefone %>
-    <%= form.text_field :telefone %>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="email@exemplo.com.br">
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputTelefone">Telefone</label>
+      <input type="email" class="form-control" id="inputTelefone" placeholder="99-9999999">
   </div>
 <% end %>
+</div>
