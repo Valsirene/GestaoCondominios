@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Cadastro Moradores</h1>
+<h1>Moradores Cadastrados</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Endereco</th>
-      <th>Email</th>
-      <th>Telefone</th>
+      <th> Nome </th>
+      <th> Endereco </th>
+      <th> Email </th>
+      <th> Telefone </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,14 +20,11 @@
         <td><%= cadastro_moradore.endereco %></td>
         <td><%= cadastro_moradore.email %></td>
         <td><%= cadastro_moradore.telefone %></td>
-        <td><%= link_to 'Vizualizar', cadastro_moradore %></td>
+        <td><%= link_to 'Exibir', cadastro_moradore %></td>
         <td><%= link_to 'Editar', edit_cadastro_moradore_path(cadastro_moradore) %></td>
         <td><%= link_to 'Deletar', cadastro_moradore, method: :delete, data: { confirm: 'Deseja Excluir?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to 'Cadastrar Novo Morador', new_cadastro_moradore_path %>
