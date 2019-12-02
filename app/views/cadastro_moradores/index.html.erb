@@ -20,9 +20,9 @@
         <td><%= cadastro_moradore.endereco %></td>
         <td><%= cadastro_moradore.email %></td>
         <td><%= cadastro_moradore.telefone %></td>
-        <td><%= link_to 'Show', cadastro_moradore %></td>
-        <td><%= link_to 'Edit', edit_cadastro_moradore_path(cadastro_moradore) %></td>
-        <td><%= link_to 'Destroy', cadastro_moradore, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Vizualizar', cadastro_moradore %></td>
+        <td><%= link_to 'Editar', edit_cadastro_moradore_path(cadastro_moradore) %></td>
+        <td><%= link_to 'Deletar', cadastro_moradore, method: :delete, data: { confirm: 'Deseja Excluir?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Cadastro Moradore', new_cadastro_moradore_path %>
+<%= link_to 'Cadastrar Novo Morador', new_cadastro_moradore_path %>

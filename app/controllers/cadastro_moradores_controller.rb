@@ -28,7 +28,7 @@ class CadastroMoradoresController < ApplicationController
 
     respond_to do |format|
       if @cadastro_moradore.save
-        format.html { redirect_to @cadastro_moradore, notice: 'Cadastro moradore was successfully created.' }
+        format.html { redirect_to @cadastro_moradore, notice: 'Cadastrado com Sucesso!' }
         format.json { render :show, status: :created, location: @cadastro_moradore }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CadastroMoradoresController < ApplicationController
   def update
     respond_to do |format|
       if @cadastro_moradore.update(cadastro_moradore_params)
-        format.html { redirect_to @cadastro_moradore, notice: 'Cadastro moradore was successfully updated.' }
+        format.html { redirect_to @cadastro_moradore, notice: 'Atualizado com sucesso!!' }
         format.json { render :show, status: :ok, location: @cadastro_moradore }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CadastroMoradoresController < ApplicationController
   def destroy
     @cadastro_moradore.destroy
     respond_to do |format|
-      format.html { redirect_to cadastro_moradores_url, notice: 'Cadastro moradore was successfully destroyed.' }
+      format.html { redirect_to cadastro_moradores_url, notice: 'Excluido com sucesso!' }
       format.json { head :no_content }
     end
   end
